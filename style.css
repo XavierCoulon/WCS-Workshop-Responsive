@@ -137,9 +137,9 @@ footer {
   }
 
   header h1 {
-    display: flex;
-    justify-content: center;
-    font-size: clamp(3rem, 4rem, 6rem);
+    /* display: flex;
+    justify-content: center; */
+    font-size: clamp(3rem, 2.5vw, 5rem);
   }
 
   #featured-posts {
@@ -163,5 +163,11 @@ footer {
 
   article:first-of-type {
     grid-area: 2 / 1 / 4 / 3;
+  }
+}
+
+@media print and (min-width: 361px) and (max-width: 1199px) {
+  header h1 {
+    filter: drop-shadow(30px 10px 4px #f76c6c);
   }
 }

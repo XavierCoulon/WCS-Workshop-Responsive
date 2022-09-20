@@ -7,12 +7,13 @@ body {
   line-height: 1.5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #f2f2f2;
+  --main-color: #f76c6c;
 }
 
 /* navigation */
 nav {
   padding: 0.5rem;
-  background-color: #f76c6c;
+  background-color: var(--main-color);
   color: white;
 }
 
@@ -78,7 +79,7 @@ section > article {
 /*footer*/
 footer {
   padding: 1rem;
-  background-color: #f76c6c;
+  background-color: var(--main-color);
 }
 
 @media screen and (max-width: 360px) {
@@ -168,6 +169,6 @@ footer {
 
 @media print and (min-width: 361px) and (max-width: 1199px) {
   header h1 {
-    filter: drop-shadow(30px 10px 4px #f76c6c);
+    filter: drop-shadow(30px 10px 4px var(--main-color));
   }
 }
